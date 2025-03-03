@@ -2,14 +2,14 @@ import textwrap
 
 def menu(): 
     menu ="""
-    ================= BANCO DEVPRO =================
+    ================= BANCO =================
     Selecione uma opção:
     [1]\tDepositar
     [3]\tSacar
     [5]\tExtrato
     [7]\tCriar usuário
     [9]\tCriar conta 
-    [L]\tListar contas
+    [11]\tListar contas
     [0]\tSair
     ================================================
     => """
@@ -163,7 +163,7 @@ def main():
             if conta:
                 contas.append(conta)
         
-        elif opcao == "L": #Listar contas
+        elif opcao == "11": #Listar contas
             listar_contas(contas)
             
         elif opcao == "0": #Sair
